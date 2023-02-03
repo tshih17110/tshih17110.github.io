@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+$font-stack: 'Josefin Sans';
+$intro-text: #FFFFFF;
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    user-select: none;
+    font-family: $font-stack;
+    color: $intro-text;
+    transition: 0.5s;
+    .intro-title {
+        font-size: 4rem;
+    }
+    .intro-description {
+        width: fit-content;
+        font-size: 1rem;
+    }
+}
+
+

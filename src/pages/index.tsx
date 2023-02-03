@@ -9,7 +9,9 @@ import Layout from '../components/layout'
 
 const IndexPage = ({ children }:{children:any}) => {
     return (     
+        
         <Layout>
+            <title>Thomas Shih</title>
         </Layout>
     )
 } 

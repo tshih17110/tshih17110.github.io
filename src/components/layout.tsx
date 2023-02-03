@@ -1,19 +1,25 @@
 import React, { useState, useEffect } from 'react'
 
-import Header from './header'
-import ParticlesContainer from './particles'
 import Stars from './stars'
+import Header from './header'
+import Intro from './intro'
+
 
 import '../styles/layout.scss'
 
 const Layout = ({ children }:{children:any}) => {
+    // useEffect(() => {
+    //     let delay = setTimeout(() => {
+    //       clearTimeout(delay)
+    //     }, 50)
+    // })
 
     return (
-        // <Stars />
         <div className="layout-container">
             <main>{children}</main>
             <Stars />
             <Header />
+            <Intro />
         </div>
         
     )
