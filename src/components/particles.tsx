@@ -2,12 +2,15 @@ import React from 'react';
 
 import Particles from "react-particles";
 import { loadFull } from 'tsparticles';
-import type { Engine } from "tsparticles-engine";
-import { loadStarsPreset } from "tsparticles-preset-stars";
+import { Engine, tsParticles } from "tsparticles-engine";
+
+
+tsParticles.addShape("dot", function (context, particle, radius) {
+    const shapeData = particle.shapeData;
+  });
 
 const ParticlesContainer = () => {
     const particlesOptions = {
-        preset: "stars",
         particles: {
             number: {
                 density: {
@@ -34,7 +37,7 @@ const ParticlesContainer = () => {
                     sync: false,
                 },
                 random: true,
-                value: 0.5,
+                value: { min: 0, max: 0.5 },
             },
         },
         interactivity: {
@@ -48,7 +51,7 @@ const ParticlesContainer = () => {
             modes: {            
                 bubble: {
                     opacity: 1,
-                    size: 3,
+                    size: 2,
                     distance: 100,
                     color: {
                         value: '#FFFFFF'

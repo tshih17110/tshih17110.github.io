@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "bourbon": "^7.3.0",
     "gatsby": "^5.5.0",
     "gatsby-plugin-sass": "^6.5.0",
     "react": "^18.2.0",

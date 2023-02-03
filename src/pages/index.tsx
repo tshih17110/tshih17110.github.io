@@ -7,10 +7,9 @@ import ParticlesContainer from '../components/particles'
 import Layout from '../components/layout'
 
 
-const IndexPage = () => {
+const IndexPage = ({ children }:{children:any}) => {
     return (     
         <Layout>
-            {/* <ParticlesContainer /> */}
         </Layout>
     )
 } 

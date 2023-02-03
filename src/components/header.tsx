@@ -6,12 +6,17 @@ import '../styles/header.scss'
 
 const Header = () => {
     return (
-        <header className='navbar'>
-            <div className='links'>
-                <a>About</a>
-                <a className='resume' href={Resume}>Resume</a> 
-                <a>Contact</a>   
+        <header className='header'>
+            <div className="navbar">
+                <div className="logo">
+                    <h1>TS</h1>
+                </div>
+                <div className='links'>
+                    <a className='resume' href={Resume}>Resume</a> 
+                    <a href="mailto:tshih17110@gmail.com">Contact</a>   
+                </div>    
             </div>
+            
             
         </header>
     )
