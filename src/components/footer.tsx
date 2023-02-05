@@ -1,11 +1,7 @@
 import React from 'react';
 import '../styles/footer.scss';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { AiOutlineGithub, AiFillGithub } from 'react-icons/ai'
-import { BsGithub } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
-import GithubLogo from './icons/github';
-import LinkedinLogo from './icons/linkedin';
 
 const Footer = () => {
     return (
