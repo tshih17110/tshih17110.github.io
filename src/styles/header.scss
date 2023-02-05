@@ -2,10 +2,9 @@
 
 $font-stack: 'Josefin Sans';
 $navbar-text: #FFFFFF;
-
+$hover-glow: #05d1fa;
 
 .header {
-	// z-index: 10;
 	position: sticky;
 	top: 0;
 	user-select: none;
@@ -24,7 +23,7 @@ $navbar-text: #FFFFFF;
 		justify-content: space-between;
 		width: 100%;
 		max-width: 900px;
-        padding: 0 10px;
+        // padding: 0 10px;
 		.logo {
 			margin: 0;
 		}
@@ -33,10 +32,14 @@ $navbar-text: #FFFFFF;
 				margin-left: 25px;
                 text-decoration: none;
                 color: $navbar-text;
+				transition: 0.3s;
 			}
             a:visited {
                 color: inherit;
             }
+			a:hover { 
+				color: $hover-glow; 
+			}
 		}
 	}
 }

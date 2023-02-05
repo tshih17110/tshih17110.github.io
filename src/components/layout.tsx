@@ -1,25 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
-import Stars from './stars'
-import Header from './header'
-import Intro from './intro'
+import Stars from './stars';
+import Header from './header';
+import Intro from './intro';
+import Footer from './footer';
 
-
-import '../styles/layout.scss'
+import '../styles/layout.scss';
 
 const Layout = ({ children }:{children:any}) => {
-    // useEffect(() => {
-    //     let delay = setTimeout(() => {
-    //       clearTimeout(delay)
-    //     }, 50)
-    // })
-
     return (
-        <div className="layout-container">
+        <div className='layout-container'>
             <main>{children}</main>
-            <Stars />
+            <Stars />    
             <Header />
             <Intro />
+            <Footer />
         </div>
         
     )

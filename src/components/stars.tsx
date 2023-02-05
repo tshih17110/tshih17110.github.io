@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import '../styles/stars.scss'
+import React, { useEffect } from 'react';
+import '../styles/stars.scss';
 
 const Stars = () => {
     return (
