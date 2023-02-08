@@ -8,13 +8,14 @@
     "gatsby"
   ],
   "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit",
-    "deploy": "gatsby build && gh-pages -d public -b main"
+    "typecheck": "tsc --noEmit"
+
   },
   "dependencies": {
     "bourbon": "^7.3.0",

@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className='footer'>
             <div className="footer-container">
                 <div className="logo-links">
-                    <a className='github-link' href='https:/github.com/tshih17110' target='_blank'>
+                    <a className='github-link' href='https://github.com/tshih17110' target='_blank'>
                         <IconContext.Provider value={{size: '36px', className: 'github-logo'}}>
                             <FaGithub />
                         </IconContext.Provider>
