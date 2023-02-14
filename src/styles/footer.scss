@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import './breakpoint.scss';
 
 $font-stack: 'Josefin Sans';
 $footer-text: #FFFFFF;
@@ -16,21 +17,46 @@ $hover-glow: #05d1fa;
     font-family: $font-stack;
     .footer-container {
         color: $footer-text;
-        font-size: 0.80rem;
+        font-size: 0.8rem;
         .logo-links {
             color: $footer-text;
             display: flex ;
             align-items: center;
             justify-content: center;
-            gap: 10px;     
+            gap: 10px;  
             a {
                 display: inline-block;
                 transition: 0.3s;
                 color: #FFFFFF;
+                width: 2rem;
+                height: 2rem;
+                @include xs-breakpoint {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+                @include xl-breakpoint {
+                    width: 3rem;
+                    height: 3rem;
+                }
+                @include landscape-breakpoint {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
             }
             a:hover {
                 color :$hover-glow;
                 transform: translateY(-3px);
+            }
+        }
+        .footer-description {
+            @include xs-breakpoint {
+                font-size: 0.5rem;
+            }
+            @include xl-breakpoint {
+                font-size: 1.25rem;
+            }
+            @include landscape-breakpoint {
+                font-size: 0.5rem;
             }
         }
     }    

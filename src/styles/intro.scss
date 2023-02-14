@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import './breakpoint.scss';
 
 $font-stack: 'Josefin Sans';
 $intro-text: #FFFFFF;
@@ -8,17 +9,41 @@ $intro-text: #FFFFFF;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 70vh;
     user-select: none;
     font-family: $font-stack;
     color: $intro-text;
     transition: 0.5s;
+    @include landscape-breakpoint {
+        font-size: 2rem;
+        margin-bottom: 0;    
+        height: 50vh;
+    }
     .intro-title {
         font-size: 4rem;
+        margin-bottom: 0;
+        @include xs-breakpoint {
+            font-size: 2.75rem;
+        }
+        @include xl-breakpoint {
+            font-size: 6rem;
+        }
+        @include landscape-breakpoint { 
+            font-size: 2.5rem;
+        }
     }
     .intro-description {
         width: fit-content;
         font-size: 1rem;
+        @include xs-breakpoint {
+            font-size: 0.7rem;
+        }
+        @include xl-breakpoint {
+            font-size: 1.5rem;
+        }
+        @include landscape-breakpoint {
+            font-size: 0.7rem;
+        }
     }
 }
 
