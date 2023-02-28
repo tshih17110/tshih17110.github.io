@@ -28,7 +28,7 @@ $hover-glow: #05d1fa;
 		.logo {
 			margin: 0;
 			@include xl-breakpoint {
-				font-size: 1.75rem;
+				font-size: 1.25rem;
 			}
 		}
 		.links {
@@ -37,8 +37,11 @@ $hover-glow: #05d1fa;
                 text-decoration: none;
                 color: $navbar-text;
 				transition: 0.3s;
+				@include xs-breakpoint {
+					font-size: 0.75rem;
+				}
 				@include xl-breakpoint {
-					font-size: 1.5rem;
+					font-size: 1rem;
 				}
 			}
             a:visited {

@@ -10,9 +10,10 @@ $hover-glow: #05d1fa;
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0%;
+    bottom: 0;
     margin: 0;
     width: 100%;
+    height: auto;
     text-align: center;
     font-family: $font-stack;
     .footer-container {
@@ -35,8 +36,8 @@ $hover-glow: #05d1fa;
                     height: 1.5rem;
                 }
                 @include xl-breakpoint {
-                    width: 3rem;
-                    height: 3rem;
+                    width: 2rem;
+                    height: 2rem;
                 }
                 @include landscape-breakpoint {
                     width: 1.5rem;
@@ -49,14 +50,15 @@ $hover-glow: #05d1fa;
             }
         }
         .footer-description {
+            font-weight: 5;
             @include xs-breakpoint {
-                font-size: 0.5rem;
+                font-size: 0.3rem;
             }
             @include xl-breakpoint {
-                font-size: 1.25rem;
+                font-size: 0.75rem;
             }
             @include landscape-breakpoint {
-                font-size: 0.5rem;
+                font-size: 0.3rem;
             }
         }
     }    

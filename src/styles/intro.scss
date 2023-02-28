@@ -9,13 +9,14 @@ $intro-text: #FFFFFF;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex: 1 auto;
     height: 70vh;
     user-select: none;
     font-family: $font-stack;
     color: $intro-text;
     transition: 0.5s;
+    margin-bottom: 80px;
     @include landscape-breakpoint {
-        font-size: 2rem;
         margin-bottom: 0;    
         height: 50vh;
     }
@@ -26,7 +27,7 @@ $intro-text: #FFFFFF;
             font-size: 2.75rem;
         }
         @include xl-breakpoint {
-            font-size: 6rem;
+            font-size: 4rem;
         }
         @include landscape-breakpoint { 
             font-size: 2.5rem;
@@ -34,15 +35,10 @@ $intro-text: #FFFFFF;
     }
     .intro-description {
         width: fit-content;
-        font-size: 1rem;
-        @include xs-breakpoint {
-            font-size: 0.7rem;
-        }
+        font-size: 0.75rem;
+        font-weight: 5;
         @include xl-breakpoint {
-            font-size: 1.5rem;
-        }
-        @include landscape-breakpoint {
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
     }
 }

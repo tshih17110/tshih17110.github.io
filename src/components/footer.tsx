@@ -14,7 +14,7 @@ const Footer = () => {
                         </IconContext.Provider>
                     </a>
                     <a className='linkedin-link' href='https://linkedin.com/in/thomas-shih-105674184' target='_blank'>
-                        <IconContext.Provider value={{size: 'auto',className: 'linkedin-logo'}}>
+                        <IconContext.Provider value={{size: 'auto', className: 'linkedin-logo'}}>
                             <FaLinkedin />
                         </IconContext.Provider>
                     </a>                    
