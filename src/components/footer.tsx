@@ -20,7 +20,6 @@ const Footer = () => {
                         </IconContext.Provider>
                     </a>                    
                 </div>
-                <p className='footer-description'>Built by Thomas Shih | 2023</p>    
             </div>
         </footer>
    

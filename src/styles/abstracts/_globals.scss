@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 
 $font-stack: 'Josefin Sans', sans-serif;
-$hover-glow: rgb(71, 235, 238);
+$hover-glow: #ffffff;
 
 body {
     font-family: $font-stack;
-    color: #FFFFFF !important;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #e0e0e0;
+}
+
+a {
+    color: #cfd0d1;
 }
 
 * {

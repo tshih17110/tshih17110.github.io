@@ -1,16 +1,17 @@
-import { dotSpinner } from 'ldrs';
+import { ring } from 'ldrs';
 import '../styles/main.scss';
 
-dotSpinner.register();
-
+ring.register();
 
 function LoadingAnimation() {
     return (
-        <l-dot-spinner
-            size="45"
-            speed="1.75"
-            color="white"
-        ></l-dot-spinner>
+        <l-ring
+            size="40"
+            stroke="5"
+            bg-opacity="0"
+            speed="2" 
+            color="#e0e0e0" 
+        ></l-ring>        
     );
 }
 

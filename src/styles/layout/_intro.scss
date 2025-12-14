@@ -1,5 +1,4 @@
 @use '../abstracts/breakpoints';
-// @import './breakpoint.scss';
 
 $intro-text: #FFFFFF;
 
@@ -9,7 +8,7 @@ $intro-text: #FFFFFF;
     align-items: center;
     flex-direction: column;
     flex: 1 auto;
-    height: 70vh;
+    height: 80vh;
     user-select: none;
     transition: 0.5s;
     .intro-title {

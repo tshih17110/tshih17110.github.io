@@ -11,7 +11,7 @@ $footer-text: #FFFFFF;
     height: auto;
     text-align: center;
     margin: 0;
-    bottom: 0;
+    bottom: 5vh;
     // font-family: $font-stack;
     .footer-container {
         color: $footer-text;
@@ -25,22 +25,9 @@ $footer-text: #FFFFFF;
             gap: 10px;  
             a {
                 display: inline-block;
-                transition: 0.3s;
-                color: #FFFFFF;
+                transition: 0.3s;        
                 width: 2rem;
                 height: 2rem;
-                // @include xs-breakpoint {
-                //     width: 1.5rem;
-                //     height: 1.5rem;
-                // }
-                // @include xl-breakpoint {
-                //     width: 2rem;
-                //     height: 2rem;
-                // }
-                // @include landscape-breakpoint {
-                //     width: 1.5rem;
-                //     height: 1.5rem;
-                // }
             }
             a:hover {
                 color :$hover-glow;
@@ -53,25 +40,12 @@ $footer-text: #FFFFFF;
 a {
     display: inline-block;
     transition: 0.3s;
-    color: #FFFFFF;
     width: 2rem;
     height: 2rem;
-    // @include xs-breakpoint {
-    //     width: 1.5rem;
-    //     height: 1.5rem;
-    // }
-    // @include xl-breakpoint {
-    //     width: 2rem;
-    //     height: 2rem;
-    // }
-    // @include landscape-breakpoint {
-    //     width: 1.5rem;
-    //     height: 1.5rem;
-    // }
 }
 a:hover {
     color :$hover-glow;
-    transform: translateY(-3px);
+    transform: translateY(-1px);
 }
 
 
